@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='static/images/favicon.png') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><img src="{{ url_for('static', filename='static/images/favicon.png') }}" alt="Logo" class="navbar-logo"></li>
+                <li><a href="{{ url_for('index') }}">COVID-19 Detection Using X-ray Images</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <div class="left-column">
+                <h1>COVID-19 Detection Using X-ray Images</h1>
+                <div class="input-container">
+                    <input type="file" id="image-selector" class="custom-file-input">
+                    <button id="predict-button" class="btn">Predict</button>
+                </div>
+                <div class="result-container">
+                    <div class="result-box">
+                        <p><strong>Prediction:</strong> <span id="result">...</span></p>
+                    </div>
+                    <div class="probability-box">
+                        <p><strong>Probability:</strong> <span id="probability">...</span></p>
+                    </div>
+                </div>                
+            </div>
+            <div class="right-column">
+                <div id="image-preview">
+                    <img id="selected-image" src="static/images/upload4.png" alt="Selected X-ray">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 COVID-19 Detection System | All Rights Reserved</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
