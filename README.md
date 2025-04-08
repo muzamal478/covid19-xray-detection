@@ -11,7 +11,7 @@ A machine learning-based web application built with **Flask** to detect COVID-19
 
 ## 🚀 Live Demo
 
-[Live Demo](/static/images/covid19-xray-detection.png)
+[Live Demo](/static/images/covid19-xray-detection.mp4) 
 
 ## 🛠️ Tech Stack
 
