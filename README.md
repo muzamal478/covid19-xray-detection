@@ -1,6 +1,7 @@
 # 🦠 COVID-19 Detection Using X-ray Images
 
 A machine learning-based web application built with **Flask** to detect COVID-19 using chest X-ray images.
+
 ![Live Demo](/static/images/covid19-xray-detection.png)
 
 ## 📸 How It Works
